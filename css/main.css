@@ -1,3 +1,66 @@
-body {
-    background-color: red;
+:root {
+    --text: #495B73;
+    --base: #E9F1F2;
+    --sec: #D9436B;
+    --enlace: #495B73;
+    --hover: #D93250;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--base);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--sec);
+}
+
+p {
+    color: var(--text);
+}
+
+.pad_100 {
+    padding: 100px 0px;
+}
+
+.center {
+    text-align: center;
+    margin: 0px auto;
+}
+
+
+/*estilos de barra de navegación*/
+
+nav {
+    width: 100%;
+    background-color: lightpink;
+    padding: 10px 0px;
+    position: : fixed;
+    z-index: 100;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    font-size: 16px;
 }
