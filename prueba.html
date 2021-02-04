@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/slippry.css" />
 </head>
 <style>
     /*estilos de la web*/
@@ -185,11 +186,27 @@
             <p>Mi mano esta un póco adormecido lo frotare para que este mejor y me deje trabajar</p>
         </div>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, laboriosam nobis obcaecati ullam totam inventore, nihil facere assumenda aperiam fugit exercitationem enim doloribus modi odio officia! Autem harum atque sed? Vitae sequi eaque nostrum,
-        beatae aliquam provident, optio sit, temporibus tempora molestiae excepturi atque saepe eligendi ducimus sed officiis! Id accusantium placeat labore possimus praesentium quos inventore adipisci laudantium voluptates. Illo perspiciatis omnis, fugiat
-        voluptatibus nostrum ipsum, officiis, at architecto fugit nemo magni qui dolore necessitatibus! Neque soluta nostrum, minus exercitationem velit iure, quidem vel voluptate ea sint incidunt nisi? Cum aperiam consectetur ab. Illo doloribus ad veritatis
-        veniam eum dolorum repudiandae, est quasi officiis earum laudantium perferendis ut fugiat cupiditate laborum cum perspiciatis obcaecati! Accusamus atque eaque dolorem saepe! Porro ad maiores facere libero quis earum natus perspiciatis tempore
-        cum laborum tempora dolore voluptatibus, asperiores nam necessitatibus ipsam. Dolor culpa quas quasi cupiditate perferendis omnis at nobis consequuntur voluptate.</p>
+    <ul id="slippry-demo">
+        <li>
+            <a href="#slide1"><img src="imagenes/image-1.jpg" alt="Welcome to Slippry!"></a>
+        </li>
+        <li>
+            <a href="#slide2"><img src="imagenes/image-2.jpg" alt="This is an awesome jQuery slider plugin."></a>
+        </li>
+        <li>
+            <a href="#slide3"><img src="imagenes/image-4.jpg" alt="Check it out, you are going to <span class='red'>♥</span> it :)"></a>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="js/slippry.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#slippry-demo').slippry()
+        });
+    </script>
+
 </body>
 
 </html>
