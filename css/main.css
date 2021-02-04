@@ -6,16 +6,36 @@
     --hover: #D93250;
 }
 
-a {
+a:link {
     color: var(--text);
+    position: relative;
     text-decoration: none;
+    padding: 10px;
 }
 
 a:hover {
     color: var(--base);
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.linea {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.linea:hover {
+    position: relative;
+    background-color: white;
+    height: 100%;
+    width: 5%;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 h1,
@@ -45,22 +65,34 @@ p {
 
 nav {
     width: 100%;
-    background-color: lightpink;
+    background-color: #9DA65D;
     padding: 10px 0px;
-    position: : fixed;
-    z-index: 100;
+    position: fixed;
 }
 
 ul {
-    margin: 0px;
-    padding: 0px;
+    margin-top: 10px;
+    padding: 10px;
     text-align: right;
 }
 
 li {
+    padding: 0px 10px;
     display: inline-block;
 }
 
-a {
-    font-size: 16px;
+a:visited {
+    color: var(--text);
 }
+
+a:active {
+    color: white;
+}
+
+
+/*
+a {
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}*/
