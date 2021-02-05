@@ -42,14 +42,14 @@
                 <div class="col-lg-2">
                     <!--logotipo-->
                     <a href="index.html">
-                        <img src="imagenes/logo.png" alt="logo prueba" width="70px">
+                        <img class="logo" src="imagenes/logo.png" alt="logo" width="70px">
                     </a>
                 </div>
                 <div class="col-lg-10">
                     <ul id="ulnav">
                         <li>
 
-                            <div class="linea"><a href="index.html">Inicio</a></div>
+                            <div class="linea"><a href="#">Inicio</a></div>
 
                         </li>
                         <li>
@@ -71,28 +71,107 @@
     <section id="slider">
         <div class="sy-slides-wrap">
             <ul id="slippry">
-                <li>
-                    <a href="#"><img src="imagenes/1.jpg" alt="imagen 1"></a>
-                </li>
+
 
                 <li>
+
+                    <h3 class="iz top250">Pormociones al alcance de tus manos</h3>
+                    <p class="de top300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sapiente officia commodi.
+                    </p>
+                    <button class="boton top375">Clic aquí</button>
+                    <a href="#"><img src="imagenes/1.jpg" alt="imagen 1"></a>
+                </li>
+                <li>
+
+                    <h3 class="iz top250">Asesoria</h3>
+                    <p class="de top300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sapiente officia necessitatibus labore.
+                    </p>
+                    <button class="boton top375">Ver más</button>
                     <a href="#"><img src="imagenes/3.jpg" alt="imagen 3"></a>
                 </li>
                 <li>
+
+                    <h3 class="iz top250">Escalables</h3>
+                    <p class="de top300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. eligendi minima rerum in necessitatibus labore.
+                    </p>
+                    <button class="boton top375">Ver más</button>
                     <a href="#"><img src="imagenes/4.jpg" alt="imagen 4"></a>
                 </li>
                 <li>
+
+                    <h3 class="iz top250"><strong class="dominio">Dominio</strong> y Hosting </h3>
+                    <p class="de top300">Lorem ipsum, dolor sit amet consectetur.
+                    </p>
+                    <button class="boton top375">Ver más</button>
                     <a href="#"><img src="imagenes/5.jpg" alt="imagen 5"></a>
                 </li>
             </ul>
         </div>
-
-
     </section>
-
-
-
     <!--End slider-->
+    <!--Area de nosotros-->
+
+    <div class="pad_100" id="nosotros">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="center main-title">Nuestra Identidad</h1>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="col-xl-6">
+                        <div class="diamante">
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6">
+                        <br/><br/>
+                        <h3><strong>Fotografia</strong><span> para tus eventos</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic unde dolorem enim alias! Fugit hic odit neque minus? Impedit vitae blanditiis exercitationem non ipsam assumenda qui commodi iste labore.</p>
+                        <button class="boton">Contacto</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End We-->
+    <!--Service-->
+    <br/><br/><br/>
+    <div class="pad_100">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="center main-title">Nuestros Servicios</h1>
+                    <h3 class="center">Capturamos <strong> Momentos</strong></h3>
+                </div>
+            </div>
+            <br/><br/><br/>
+            <div class="row">
+                <div class="col-xl-4">
+                    <img src="imagenes/serv1.jpg" alt="Eventos" class="rounded-circle">
+                    <h2>Eventos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia voluptas provident, harum aliquid iure itaque nobis autem consectetur rem. Quia excepturi rem voluptas consequatur nemo voluptates natus, deleniti culpa!</p>
+                    <button class="boton">Leer mas &raquo;</button>
+                </div>
+                <div class="col-xl-4">
+                    <img src="imagenes/serv3.jpg" alt="Bodas" class="rounded-circle">
+                    <h2>Bodas</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia voluptas provident, harum aliquid iure itaque nobis autem consectetur rem. Quia excepturi rem voluptas consequatur nemo voluptates natus, deleniti culpa!</p>
+                    <button class="boton">Leer mas &raquo;</button>
+                </div>
+                <div class="col-xl-4">
+                    <img src="imagenes/serv2.jpg" alt="natural" class="rounded-circle">
+                    <h2>Natural</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia voluptas provident, harum aliquid iure itaque nobis autem consectetur rem. Quia excepturi rem voluptas consequatur nemo voluptates natus, deleniti culpa!</p>
+                    <button class="boton">Leer mas &raquo;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Service-->
+
     <!--JavaScript de CDN minified de JQuery-->
 
     <!-- JavaScript de bootstrap -->
@@ -105,13 +184,18 @@
     <script>
         $(document).ready(function() {
             $('#slippry').slippry({
+                autoHover: true,
+                useCSS: true,
                 captions: false,
                 pager: false,
-                controls: false,
-
+                speed: 1200,
+                controls: true,
+                autoHoverDelay: 200,
+                pause: 5000,
             })
         });
     </script>
+
 </body>
 
 </html>
