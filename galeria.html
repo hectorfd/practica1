@@ -77,13 +77,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1 class="center main-title">Nuestro Trabajo</h>
-                            <h3 class="center">Galeria</h3>
+                        <h1 class="center main-title">Nuestro Trabajo</h1>
+                        <br>
+                        <h3 class="center">Galeria</h3>
                     </div>
                 </div>
                 <div class="grid">
                     <div class="grid-item">
-                        <a href="imagenes/footer1.jpg" data-lightbox="Galeria-item"><img class="imggrid" src="imagenes/footer1.jpg" alt=""></a>
+                        <a href="imagenes/foto1.jpg" data-lightbox="Galeria-item"><img class="imggrid" src="imagenes/footer1.jpg" alt=""></a>
                     </div>
                     <div class="grid-item">
                         <a href="imagenes/footer2.jpg" data-lightbox="Galeria-item"><img class="imggrid" src="imagenes/footer2.jpg" alt=""></a>
@@ -112,11 +113,35 @@
                     <div class="grid-item">
                         <a href="imagenes/footer10.jpg" data-lightbox="Galeria-item"><img class="imggrid " src="imagenes/footer10.jpg" alt=""></a>
                     </div>
+                    <div class="grid-item">
+                        <a href="imagenes/footer1.jpg" data-lightbox="Galeria-item"><img class="imggrid" src="imagenes/footer1.jpg" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="imagenes/footer2.jpg" data-lightbox="Galeria-item"><img class="imggrid" src="imagenes/footer2.jpg" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="imagenes/footer3.jpg" data-lightbox="Galeria-item"><img class="imggrid" src="imagenes/footer3.jpg" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="imagenes/footer4.jpg" data-lightbox="Galeria-item"><img class="imggrid" src="imagenes/footer4.jpg" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="imagenes/footer5.jpg" data-lightbox="Galeria-item"><img class="imggrid" src="imagenes/footer5.jpg" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="imagenes/footer6.jpg" data-lightbox="Galeria-item"><img class="imggrid" src="imagenes/footer6.jpg" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="imagenes/footer7.jpg" data-lightbox="Galeria-item"><img class="imggrid" src="imagenes/footer7.jpg" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="imagenes/footer8.jpg" data-lightbox="Galeria-item"><img class="imggrid" src="imagenes/footer8.jpg" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="pad_100"></div>
+
     <!--fin contenido-->
     <!--footer-->
     <footer class="footer">
@@ -218,7 +243,9 @@
         lightbox.option({
             'resizeDuration': 200,
             'disableScrolling': true,
+            'albunLabel': "Imagen %1 de %2"
         });
+
         /*detectar ancho de imagen de diamante*/
         var dn_width = $('.grid-item').width();
         $('.grid-item').css({
@@ -236,8 +263,6 @@
             }
         });
         $(window).scroll();
-
-        });
     </script>
 
 
