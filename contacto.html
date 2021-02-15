@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/slippry.css">
     <!--Font Awesome de bobstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Estilo del lightbox-->
+    <link rel="stylesheet" href="css/lightbox.min.css">
 
     <!--titulo de la página-->
     <title>practica1 o inicio</title>
@@ -35,9 +37,7 @@
 
 <body>
     <!--Navegación-->
-
-
-    <nav id="nav">
+    <nav id="nav" class="nav-overlay">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-2">
@@ -50,7 +50,7 @@
                     <ul id="ulnav">
                         <li class="li">
 
-                            <div class="linea"><a class="rojo" href="#">Inicio</a></div>
+                            <div class="linea"><a href="index.html">Inicio</a></div>
 
                         </li>
                         <li class="li">
@@ -63,7 +63,7 @@
                             <div class="linea"><a href="galeria.html">galería</a></div>
                         </li>
                         <li class="li">
-                            <div class="linea"><a href="contacto.html">Contacto</a></div>
+                            <div class="linea"><a href="#">Contacto</a></div>
                         </li>
                     </ul>
                 </div>
@@ -71,106 +71,36 @@
         </div>
     </nav>
     <!--En navegación-->
-    <!--slider-->
-    <section id="slider">
-        <div class="sy-slides-wrap">
-            <ul id="slippry">
-                <li>
-                    <h3 class="iz top250">Para Negocios</h3>
-                    <p class="de top300">100% Adaptable y escalable para futuros cambios
-                    </p>
-                    <button class="boton top400">Cotizar</button>
-                    <a href="#"><img src="imagenes/1.jpg" alt="imagen 1"></a>
-                </li>
+    <!--contenido-->
+    <div class="pad_50">
 
-                <li>
-                    <h3 class="iz top250">Diseño 100% Adaptable</h3>
-                    <p class="de top300">Lorem ipsum, dolor sit amet consectetur.
-                    </p>
-                    <button class="boton top375">Ver más</button>
-                    <a href="#"><img src="imagenes/2.jpg" alt="imagen 2"></a>
-                </li>
-                <li>
-
-                    <h3 class="iz top250"><strong class="dominio">Dominio</strong> y Hosting </h3>
-                    <p class="de top300">A un precio de regalo.
-                    </p>
-                    <button class="boton top375">Ver más</button>
-                    <a href="#"><img src="imagenes/3.jpg" alt="imagen 3"></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!--End slider-->
-    <!--Area de nosotros-->
-    <br><br><br><br><br>
-    <div class="pad_100" id="nosotros">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="center main-title">Nosotros</h1>
-                </div>
-                <div class="pad_50"></div>
-                <div class="d-flex align-items-center">
-                    <div class="col-xl-6">
-                        <div class="diamante rounded-circle2">
-                            <!--Imagen de fondo-->
-
-
-                        </div>
-                    </div>
-                    <div class="col-xl-1"></div>
-                    <div class="col-xl-5">
-                        <h3><strong>Misión</strong></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic unde dolorem enim alias! Fugit hic odit neque minus? Impedit vitae blanditiis exercitationem non ipsam assumenda qui commodi iste labore.</p>
-                        <h3><strong>Visión</strong></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic unde dolorem enim alias! Fugit hic odit neque minus? Impedit vitae blanditiis exercitationem non ipsam assumenda qui commodi iste labore.</p>
-                        <button class="boton">Ver más</button>
-                        <br><br>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <!--End We-->
-    <!--Service-->
-    <br>
-    <div class="pad_100" id="servicios">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="center main-title">Nuestros Servicios</h1>
-                    <br>
-                    <h3 class="center">Capturamos <strong> Momentos</strong></h3>
-                </div>
-            </div>
-            <br/><br/>
-            <div class="row">
-                <div class="col-xl-4 center">
-                    <img src="imagenes/serv1.jpg" alt="Eventos" class="rounded-circle">
-                    <h2>Eventos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia voluptas provident, harum aliquid iure itaque nobis autem consectetur rem. Quia excepturi rem voluptas consequatur nemo voluptates natus, deleniti culpa!</p>
-                    <button class="botonserv">Leer mas &raquo;</button>
-                    <p></p>
-                </div>
-                <div class="col-xl-4 center">
-                    <img src="imagenes/serv3.jpg" alt="Bodas" class="rounded-circle">
-                    <h2>Bodas</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia voluptas provident, harum aliquid iure itaque nobis autem consectetur rem. Quia excepturi rem voluptas consequatur nemo voluptates natus, deleniti culpa!</p>
-                    <button class="botonserv">Leer mas &raquo;</button>
-                    <p></p>
-                </div>
-                <div class="col-xl-4 center">
-                    <img src="imagenes/serv2.jpg" alt="natural" class="rounded-circle">
-                    <h2>Diseño Web</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia voluptas provident, harum aliquid iure itaque nobis autem consectetur rem. Quia excepturi rem voluptas consequatur nemo voluptates natus, deleniti culpa!</p>
-                    <button class="botonserv">Leer mas &raquo;</button>
+    <!--Area de Contacto-->
 
-                </div>
-            </div>
-        </div>
+    <div class="contacto">
+        <ul>
+            <li class="google-maps">
+                <!--imagen del mapa-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6520.919668577643!2d-72.87905819605717!3d-13.635728074435509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d02e09b5a2421%3A0xf59db8264747f5ce!2sPlaza%20Micaela%20Bastidas!5e0!3m2!1ses-419!2spe!4v1613417132355!5m2!1ses-419!2spe"
+                    width="100%" height="70%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </li>
+            <li class="formulario">
+                <br><br><br><br>
+                <h3>Déjanos un mensaje</h3>
+                <form action="procesos/submit.php" method="POST">
+                    <input type="name" name="nombre" placeholder="Tu nombre">
+                    <input type="email" name="email" placeholder="Tu correo">
+                    <input type="tel" name="tel" placeholder="Tu telefono">
+                    <textarea name="mensaje" placeholder="Escribe aqui tu mensaje"></textarea>
+                    <button class="botonserv" type="submit" name="submit">Enviar</button>
+                </form>
+            </li>
+        </ul>
     </div>
-    <!--End Service-->
+    <div class="pad_50"></div>
+    <!--fin del area de contacto-->
+
+    <!--fin contenido-->
     <!--footer-->
     <footer class="footer">
         <br><br>
@@ -264,38 +194,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/slippry.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('#slippry').slippry({
-                autoHover: true,
-                useCSS: true,
-                captions: false,
-                pager: false,
-                speed: 1200,
-                controls: true,
-                autoHoverDelay: 200,
-                pause: 5000,
-            });
-            /*detectar ancho de imagen de diamante*/
-            var dn_width = $('.diamante').width();
-            $('.diamante').css({
-                height: dn_width,
+        /*ligthbox activado*/
 
-            });
-            /*clase pra hacer scroll en la barra de navegacion*/
-            var slider = $("#slider").height();
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();
-                if (scroll >= $('#nosotros').offset().top - 300) {
-                    $('#nav').addClass("nav-overlay");
-                } else {
-                    $('#nav').removeClass('nav-overlay');
-                }
-            });
-            $(window).scroll();
+        lightbox.option({
+            'resizeDuration': 200,
+            'disableScrolling': true,
+            'albunLabel': "Imagen %1 de %2"
         });
-    </script>
 
+        /*detectar ancho de imagen de diamante*/
+        var dn_width = $('.grid-item').width();
+        $('.grid-item').css({
+            height: dn_width,
+
+        });
+        /*clase pra hacer scroll en la barra de navegacion*/
+        var slider = $("#slider").height();
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= $('#nosotros').offset().top - 300) {
+                $('#nav').addClass("nav-overlay");
+            } else {
+                $('#nav').removeClass('nav-overlay');
+            }
+        });
+        $(window).scroll();
+    </script>
 </body>
 
 </html>
